@@ -9,8 +9,8 @@ There is a React component called `ReactSlider` being mounted which renders a
 slider in the browser. When the slider value changes, the temperature value in
 the context should also change.
 
-In this component, the thermometer value should be displayed on the "Actual
-Thermometer".
+In this component, the temperature value should be displayed on the "Actual
+Temperature".
 
 - Fill in the two props, `value` and `onAfterChange`, which are passed into
   `ReactSlider`.

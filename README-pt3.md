@@ -16,7 +16,7 @@ context.
 _Refer to the `src/context/ThemeContext.js` file if you need a reminder on how
 to do any of the above._
 
-**By the way, did you remember to wrap the application with `ClimateContext` in
+**By the way, did you remember to wrap the application with `ClimateProvider` in
 order to make it available to nested components?**
 
 [React Slider]: https://www.npmjs.com/package/react-slider
