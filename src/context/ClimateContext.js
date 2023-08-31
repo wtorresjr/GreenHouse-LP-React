@@ -1,17 +1,19 @@
 // Temperature has a default value of 50 degrees
 // Humidity has a default value of 40%
-import { createContext, useState } from 'react';
+import { createContext, useContext, useState } from 'react';
 
-const ClimateContext = createContext();
+export const ClimateContext = createContext();
 
-const ClimateProvider = ({ children }) => {
-    const [temperature, setTemperature] = useState(50);
+export const useClimate = () => useContext(ClimateContext)
+
+ const ClimateProvider = (props) => {
+    const [temp, setTemp] = useState(50);
 
     return (
-        <ClimateContext.Provider value={{ temperature, setTemperature }}>
-            {children}
+        <ClimateContext.Provider value={{ temp, setTemp }}>
+            {props.children}
         </ClimateContext.Provider >
     )
 }
 
-export { ClimateContext, ClimateProvider };
+export default ClimateProvider;
