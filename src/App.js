@@ -6,7 +6,7 @@ import Hygrometer from "./components/Hygrometer";
 
 function App() {
   return (
-    <>
+    <> 
       <Navigation />
       <Switch>
         <Route path="/thermometer">
